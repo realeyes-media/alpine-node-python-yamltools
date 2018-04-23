@@ -1,6 +1,6 @@
 FROM ironsalsa/alpine-node-git-yamltools
 
-LABEL reference=https://github.com/jfloff/alpine-python"
+LABEL reference="https://github.com/jfloff/alpine-python"
 
 ENV ALPINE_VERSION=3.7
 
