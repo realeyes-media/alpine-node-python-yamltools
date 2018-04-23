@@ -1,6 +1,6 @@
 FROM alpine-node-git-yamltools
 
-LABEL="Referenced https://github.com/jfloff/alpine-python heavily for the below"
+LABEL reference=https://github.com/jfloff/alpine-python"
 
 ENV ALPINE_VERSION=3.7
 
