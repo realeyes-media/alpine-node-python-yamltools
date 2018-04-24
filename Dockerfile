@@ -55,9 +55,8 @@ RUN echo \
   && pip install --upgrade pip \
   && if [[ ! -e /usr/bin/pip ]]; then ln -sf /usr/bin/pip3 /usr/bin/pip; fi
 
-# Get that oddly specific Python CLI
-RUN wget https://raw.githubusercontent.com/ironsalsa/elasticsearch-get-features/master/get-features.py && \
-  mv get-features.py /opt/get-features.py
+# Install Python Requests (trust me, we'll need it)
+RUN pip install --upgrade requests
 
 # since we will be "always" mounting the volume, we can set this up
 CMD ["/bin/ash"]
