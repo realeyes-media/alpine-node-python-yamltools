@@ -1,4 +1,4 @@
-FROM ironsalsa/alpine-node-git-yamltools
+FROM quay.io/realeyes/alpine-node-git-yamltools:latest
 
 LABEL reference="https://github.com/jfloff/alpine-python"
 
