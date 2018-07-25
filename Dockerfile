@@ -60,4 +60,4 @@ COPY requirements.txt .
 RUN pip install --upgrade -r requirements.txt
 
 # since we will be "always" mounting the volume, we can set this up
-CMD ["/bin/ash"]
+CMD ["/bin/sh"]
