@@ -55,9 +55,8 @@ RUN echo \
   && pip install --upgrade pip \
   && if [[ ! -e /usr/bin/pip ]]; then ln -sf /usr/bin/pip3 /usr/bin/pip; fi
 
-# Install Python Requirements.txt
-COPY requirements.txt .
-RUN pip install --upgrade -r requirements.txt
+# Install Python Requirements
+RUN pip install --upgrade requests google-oauth2l
 
 # since we will be "always" mounting the volume, we can set this up
 CMD ["/bin/sh"]
