@@ -1,2 +1,4 @@
-google-oauth2l
 requests
+google-auth
+google-auth-httplib2 
+google-api-python-client
